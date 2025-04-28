@@ -1,0 +1,33 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+body {  
+  color: #B9B5C7; 
+  font-family: 14px 'Open Sans', sans-serif;
+  background: linear-gradient(
+    to left,
+    #23a6d5,
+    #4a148c,
+    #ff0066,
+    #4a148c,
+    #23a6d5
+  );
+  background-size: 400% 400%;
+  animation: gradientTranisition 30s linear infinite;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
+}
+
+@keyframes gradientTranisition {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}

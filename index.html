@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+	<link href="index.css" rel="stylesheet">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simple Multiple Choice Quiz with JavaScript</title>
+  
+  <style>
+		
+
+		.top { padding-right: 20px; text-align: right; }
+		a { color: rgba(255,255,255,0.6); text-transform: uppercase; text-decoration: none; line-height: 42px; }
+
+		h1 {margin: top; font-weight: 400; text-align: center;}
+		
+		.main {margin: 0 auto; max-width: 500px;}
+		.main .quizsection {margin-bottom: 20px;}
+ </style>
+ 
+</head>
+
+<body>
+
+<p><h1>Тест насколько хорошо ты знаешь Стефена Карри</h1></p>
+
+<section class="main">
+
+<form name="quiz" action="javascript:check();" class="quizform">
+
+<div class="quizsection">
+
+
+	<h2>В действительности Стефена Карри зовут совсем не Стефен. А как?</h2>
+	
+	<div class="answer">
+		<input name="q1" value="value2" id="value1" type="radio" checked="checked" /> Уорделл
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value3" type="radio" /> Value 3
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q1" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Стеф Карри как-то раз побывал в России. В какой город он прилетал?</h2>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value2" id="value2" type="radio" /> Магадан
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value3" type="radio" /> Value 3
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q2" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q3" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q4" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q5" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q6" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q7" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q8" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q9" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q9" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q9" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q9" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q9" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q9" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<div class="quizsection">
+
+	<h2>Делл Карри запретил «Голден Стэйт» брать его сына на драфте. В какую команду хотел попасть Стеф?</h2>
+
+	<div class="answer">
+		<input name="q10" value="value1" id="value1" type="radio" checked="checked" /> Value 1
+	</div>
+
+	<div class="answer">
+		<input name="q10" value="value1" id="value2" type="radio" /> Value 2
+	</div>
+
+	<div class="answer">
+		<input name="q10" value="value2" id="value3" type="radio" /> «Нью-Йорк»
+	</div>
+
+	<div class="answer">
+		<input name="q10" value="value1" id="value4" type="radio" /> Value 4
+	</div>
+
+	<div class="answer">
+		<input name="q10" value="value1" id="value5" type="radio" /> Value 5
+	</div>
+
+	<div class="answer">
+		<input name="q10" value="value1" id="value6" type="radio" /> Value 6
+	</div>
+
+</div>
+
+<input value="Submit" type="submit" /> <input value="Reset" type="reset" />
+
+</form>
+
+</section>
+
+<script type="text/javascript">// <![CDATA[
+
+   var result;
+   
+   function check()
+
+   {
+
+      var question;
+      var value1;
+      var value2;
+      
+      
+      question = 1;
+      value1 = 0;
+      value2 = 0;
+      
+      
+      result = "";
+
+      var choice;
+      
+      for (question = 1; question <= 10; question++) {
+      
+         var q = document.forms['quiz'].elements['q'+question];
+
+            for (var i = 0; i < q.length; i++) {
+               if (q[i].checked) {
+                  choice = q[i].value;
+               }
+            }
+
+            if (choice == "value1") {
+               value1++;
+            }
+
+            if (choice == "value2") {
+               value2++;
+            }
+
+
+         }
+
+      if (value2 == 0) {
+
+         // Нет правильных ответов
+         result = "ocenka2";
+
+      }
+
+      else if (value2 == 1) {
+
+         // Один правильный ответ
+         result = "ocenka3";
+
+      }
+
+      else if (value2 == 2) {
+
+         // Два правильных ответа
+         result = "ocenka4";
+
+      }
+
+      else if (value2 == 3) {
+
+         // Три правильных ответа
+         result = "ocenka5";
+
+      }
+
+	  else if (value2 > 3) {
+
+		// больше трёх тру ответов
+		result = "ocenka5+";
+
+}
+
+
+      else {
+         result = "404";
+      }
+
+      window.location = result + '.html';
+
+   }
+
+// ]]></script>
+
+</body>
+</html>
